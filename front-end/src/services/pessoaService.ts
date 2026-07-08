@@ -38,3 +38,13 @@ export async function excluirPessoa(id: number) {
     throw new Error("Erro ao excluir pessoa.");
   }
 }
+
+export async function buscarPessoa(id: number) {
+  const response = await fetch(`${API_URL}/${id}`);
+
+  if (!response.ok) {
+    throw new Error("Erro ao buscar pessoa.");
+  }
+
+  return response.json();
+}
