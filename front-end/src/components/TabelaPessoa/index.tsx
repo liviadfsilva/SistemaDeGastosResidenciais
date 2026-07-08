@@ -2,12 +2,7 @@ import { useState, useEffect } from "react";
 import { Trash2 } from "lucide-react";
 import ModalPessoa from "../ModalPessoa";
 import { listarPessoas, excluirPessoa } from "../../services/pessoaService";
-
-interface Pessoa {
-  id: number;
-  nome: string;
-  idade: number;
-}
+import type { Pessoa } from "../../types/Pessoa";
 
 export default function TabelaPessoa() {
     const [modalAberto, setModalAberto] = useState(false);
