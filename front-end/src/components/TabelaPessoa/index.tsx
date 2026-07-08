@@ -3,10 +3,12 @@ import { Trash2 } from "lucide-react";
 import ModalPessoa from "../ModalPessoa";
 import { listarPessoas, excluirPessoa } from "../../services/pessoaService";
 import type { Pessoa } from "../../types/Pessoa";
+import { useNavigate } from "react-router-dom";
 
 export default function TabelaPessoa() {
     const [modalAberto, setModalAberto] = useState(false);
     const [pessoas, setPessoas] = useState<Pessoa[]>([]);
+    const navigate = useNavigate();
 
     async function carregarPessoas() {
       try {
@@ -67,7 +69,9 @@ export default function TabelaPessoa() {
 
                         <div className="flex gap-12">
                             <button className="text-[#DD716B] cursor-pointer hover:underline">+ Transação</button>
-                            <button className="text-[#9FC76B] cursor-pointer hover:underline">Detalhes</button>
+                            <button 
+                            onClick={() => navigate(`/pessoas/${pessoa.id}`)}
+                            className="text-[#9FC76B] cursor-pointer hover:underline">Detalhes</button>
                             <button
                             onClick={() => excluir(pessoa.id)}
                             className="text-red-500 hover:text-red-700 cursor-pointer">
