@@ -24,11 +24,21 @@ builder.Services
         );
     });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("ReactPolicy", policy =>
+    {
+        policy.WithOrigins("http://localhost:5173")
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
 
 app.UseSwagger();
 app.UseSwaggerUI();
-
+app.UseCors("ReactPolicy");
 app.MapControllers();
 
 app.Run();
