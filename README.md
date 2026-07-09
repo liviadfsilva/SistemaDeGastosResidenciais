@@ -8,10 +8,8 @@
 ![Typescript](https://img.shields.io/badge/typescript-6.0.2-3074bf?style=for-the-badge)
 ![Tailwind](https://img.shields.io/badge/tailwind-4.3.2-37b7f0?style=for-the-badge)
 
-## 💰 Sobre
-Aplicação desenvolvida como parte de um teste técnico para vaga de estágio.
-
-O sistema permite cadastrar pessoas, registrar receitas e despesas, consultar o histórico de transações e visualizar um resumo financeiro individual e geral.
+## 🌀 Sobre
+Aplicação full-stack desenvolvida como desafio técnico para uma vaga de estágio. O sistema permite cadastrar pessoas, registrar receitas e despesas, consultar o histórico de transações e visualizar um resumo financeiro individual e geral.
 
 <br/>
 
@@ -121,13 +119,38 @@ O fluxo da aplicação foi organizado da seguinte forma:
 ## 📸 Telas
 
 - Tela inicial;
+<img width="1470" height="801" alt="Screenshot 2026-07-09 at 18 19 59" src="https://github.com/user-attachments/assets/f3669674-f5ac-4ed1-afdc-8ed8cde591cf" />
+
+<br/>
+<br/>
 
 - Cadastro de transações;
+<img width="441" height="408" alt="Screenshot 2026-07-09 at 18 30 20" src="https://github.com/user-attachments/assets/c8e1e751-8696-43cb-b022-98f3099c3860" />
+
+
+<br/>
+<br/>
+
+- Cadastro de transações para menores de 18 anos;
+<img width="442" height="491" alt="Screenshot 2026-07-09 at 18 31 11" src="https://github.com/user-attachments/assets/d4251fbc-ab3b-4e72-8b5b-d389d2b394c3" />
+
+<br/>
+<br/>
 
 - Detalhes da pessoa;
+<img width="1470" height="802" alt="Screenshot 2026-07-09 at 18 33 33" src="https://github.com/user-attachments/assets/62932da2-0cd4-4ea0-8d9b-1af080feeb2e" />
+
+
+<br/>
+<br/>
+
 
 - Resumo financeiro.
+<img width="1470" height="800" alt="Screenshot 2026-07-09 at 18 31 19" src="https://github.com/user-attachments/assets/f890b7c6-c474-4bce-a904-6ac8851fa4e8" />
 
+
+
+<br/>
 <br/>
 
 ## 🌸 Autora
