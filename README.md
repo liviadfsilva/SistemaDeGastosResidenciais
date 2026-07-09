@@ -18,7 +18,7 @@ Aplicação full-stack desenvolvida como desafio técnico para uma vaga de está
 ### Clone o repositório
 
 ```bash
-git clone <https://github.com/liviadfsilva/SistemaDeGastosResidenciais>
+git clone https://github.com/liviadfsilva/SistemaDeGastosResidenciais
 ```
 
 ### Execute com Docker
