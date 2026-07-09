@@ -34,6 +34,10 @@ Após a inicialização:
 | Front-end | http://localhost:5173 |
 | Back-end | http://localhost:8080 |
 
+A documentação interativa da API estará disponível em: <br/>
+👉🏻 http://localhost:8080/swagger/index.html
+
+
 <br/>
 
 ## ✨ Funcionalidades
