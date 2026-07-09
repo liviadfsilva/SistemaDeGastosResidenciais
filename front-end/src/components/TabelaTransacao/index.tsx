@@ -21,9 +21,9 @@ export default function TabelaTransacao({
         </h2>
 
         <button
-        onClick={() => navigate("/resumo")}
+        onClick={() => navigate("/")}
         className="rounded bg-[#daf0be] px-4 py-2 font-bold text-[#DD716B] hover:text-[#9FC76B] hover:cursor-pointer">
-          Resumo Financeiro
+          Voltar para o Início
         </button>
       </div>
 
