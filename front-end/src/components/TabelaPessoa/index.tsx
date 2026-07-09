@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Trash2 } from "lucide-react";
 import ModalPessoa from "../ModalPessoa";
+import ModalTransacao from "../ModalTransacao";
 import { listarPessoas, excluirPessoa } from "../../services/pessoaService";
 import type { Pessoa } from "../../types/Pessoa";
 import { useNavigate } from "react-router-dom";
@@ -9,6 +10,8 @@ export default function TabelaPessoa() {
     const [modalAberto, setModalAberto] = useState(false);
     const [pessoas, setPessoas] = useState<Pessoa[]>([]);
     const navigate = useNavigate();
+    const [modalTransacaoAberto, setModalTransacaoAberto] = useState(false);
+    const [pessoaSelecionada, setPessoaSelecionada] = useState<Pessoa | null>(null);
 
     async function carregarPessoas() {
       try {
@@ -68,7 +71,12 @@ export default function TabelaPessoa() {
                         </span>
 
                         <div className="flex gap-12">
-                            <button className="text-[#DD716B] cursor-pointer hover:underline">+ Transação</button>
+                            <button 
+                            onClick={() => {
+                              setPessoaSelecionada(pessoa);
+                              setModalTransacaoAberto(true);
+                            }}
+                            className="text-[#DD716B] cursor-pointer hover:underline">+ Transação</button>
                             <button 
                             onClick={() => navigate(`/pessoas/${pessoa.id}`)}
                             className="text-[#9FC76B] cursor-pointer hover:underline">Detalhes</button>
@@ -85,9 +93,23 @@ export default function TabelaPessoa() {
             </tbody>
         </table>
       </div>
-      {modalAberto && (
-        <ModalPessoa onClose={() => setModalAberto(false)}
-        onPessoaCriada={carregarPessoas} />
+            {modalAberto && (
+        <ModalPessoa
+          onClose={() => setModalAberto(false)}
+          onPessoaCriada={carregarPessoas}
+        />
+      )}
+
+      {modalTransacaoAberto && pessoaSelecionada && (
+        <ModalTransacao
+          pessoaId={pessoaSelecionada.id}
+          idade={pessoaSelecionada.idade}
+          onClose={() => {
+            setModalTransacaoAberto(false);
+            setPessoaSelecionada(null);
+          }}
+          onTransacaoCriada={carregarPessoas}
+        />
       )}
     </section>
   );

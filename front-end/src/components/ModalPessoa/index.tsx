@@ -8,7 +8,7 @@ interface ModalPessoaProps {
 
 export default function ModalPessoa({ onClose, onPessoaCriada }: ModalPessoaProps) {
     const [nome, setNome] = useState("");
-    const [idade, setIdade] = useState(0);
+    const [idade, setIdade] = useState("");
 
     async function salvarPessoa() {
       // console.log("CLIQUEI NO SALVAR");
@@ -54,7 +54,7 @@ export default function ModalPessoa({ onClose, onPessoaCriada }: ModalPessoaProp
           <input
             type="number"
             value={idade}
-            onChange={(e) => setIdade(Number(e.target.value))}
+            onChange={(e) => setIdade((e.target.value))}
             placeholder="Digite a idade"
             className="w-full rounded-lg border border-gray-300 p-2 outline-none focus:border-[#9FC76B]"
           />
