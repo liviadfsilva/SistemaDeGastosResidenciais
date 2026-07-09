@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { criarTransacao } from "../../services/transacaoService";
+import { NumericFormat } from "react-number-format";
 
 interface ModalTransacaoProps {
   pessoaId: number;
@@ -68,11 +69,15 @@ export default function ModalTransacao({pessoaId, idade, onClose, onTransacaoCri
             Valor
           </label>
 
-          <input
-            type="number"
+          <NumericFormat
             value={valor}
-            onChange={(e) => setValor((e.target.value))}
-            placeholder="Digite o valor"
+            onValueChange={(values) => setValor(values.value)}
+            thousandSeparator="."
+            decimalSeparator=","
+            decimalScale={2}
+            fixedDecimalScale
+            prefix="R$ "
+            allowNegative={false}
             className="w-full rounded-lg border border-gray-300 p-2 outline-none focus:border-[#9FC76B]"
           />
         </div>
