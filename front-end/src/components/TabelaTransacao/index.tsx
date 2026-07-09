@@ -1,4 +1,5 @@
 import type { Transacao } from "../../types/Transacao";
+import { useNavigate } from "react-router-dom";
 
 interface TabelaTransacaoProps {
   transacoes: Transacao[];
@@ -10,6 +11,8 @@ export default function TabelaTransacao({
   nomePessoa,
 }: TabelaTransacaoProps) {
 
+  const navigate = useNavigate();
+
   return (
     <section>
       <div className="mb-4 flex items-center justify-between">
@@ -17,7 +20,9 @@ export default function TabelaTransacao({
           Transações de {nomePessoa}
         </h2>
 
-        <button className="rounded bg-[#daf0be] px-4 py-2 font-bold text-[#DD716B] hover:text-[#9FC76B] hover:cursor-pointer">
+        <button
+        onClick={() => navigate("/resumo")}
+        className="rounded bg-[#daf0be] px-4 py-2 font-bold text-[#DD716B] hover:text-[#9FC76B] hover:cursor-pointer">
           Resumo Financeiro
         </button>
       </div>
