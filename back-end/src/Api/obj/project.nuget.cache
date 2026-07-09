@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tcT+IDv4IP0=",
+  "dgSpecHash": "z2c9NNVbaaM=",
   "success": true,
-  "projectFilePath": "/Users/liviasilva/Documents/Projects/gerenciador-de-gastos/back-end/src/Api/Api.csproj",
+  "projectFilePath": "/Users/liviasilva/Documents/Projects/SistemaDeGastosResidenciais/back-end/src/Api/Api.csproj",
   "expectedPackageFiles": [
     "/Users/liviasilva/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/liviasilva/.nuget/packages/microsoft.aspnetcore.openapi/8.0.28/microsoft.aspnetcore.openapi.8.0.28.nupkg.sha512",

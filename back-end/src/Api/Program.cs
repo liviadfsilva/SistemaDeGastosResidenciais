@@ -36,6 +36,12 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    context.Database.EnsureCreated();
+}
+
 app.UseSwagger();
 app.UseSwaggerUI();
 app.UseCors("ReactPolicy");

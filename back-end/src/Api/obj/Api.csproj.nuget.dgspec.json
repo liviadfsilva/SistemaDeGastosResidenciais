@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/liviasilva/Documents/Projects/gerenciador-de-gastos/back-end/src/Api/Api.csproj": {}
+    "/Users/liviasilva/Documents/Projects/SistemaDeGastosResidenciais/back-end/src/Api/Api.csproj": {}
   },
   "projects": {
-    "/Users/liviasilva/Documents/Projects/gerenciador-de-gastos/back-end/src/Api/Api.csproj": {
+    "/Users/liviasilva/Documents/Projects/SistemaDeGastosResidenciais/back-end/src/Api/Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/liviasilva/Documents/Projects/gerenciador-de-gastos/back-end/src/Api/Api.csproj",
+        "projectUniqueName": "/Users/liviasilva/Documents/Projects/SistemaDeGastosResidenciais/back-end/src/Api/Api.csproj",
         "projectName": "Api",
-        "projectPath": "/Users/liviasilva/Documents/Projects/gerenciador-de-gastos/back-end/src/Api/Api.csproj",
+        "projectPath": "/Users/liviasilva/Documents/Projects/SistemaDeGastosResidenciais/back-end/src/Api/Api.csproj",
         "packagesPath": "/Users/liviasilva/.nuget/packages/",
-        "outputPath": "/Users/liviasilva/Documents/Projects/gerenciador-de-gastos/back-end/src/Api/obj/",
+        "outputPath": "/Users/liviasilva/Documents/Projects/SistemaDeGastosResidenciais/back-end/src/Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/liviasilva/.nuget/NuGet/NuGet.Config"
