@@ -93,6 +93,20 @@ export default function TabelaPessoa() {
             </tbody>
         </table>
       </div>
+
+      {pessoas.length > 0 && (
+        <div className="mt-5 flex justify-end">
+          <button
+            onClick={() => navigate("/resumo")}
+            className="cursor-pointer rounded bg-[#daf0be] px-4 py-2 font-bold text-[#DD716B] transition hover:text-[#9FC76B]"
+          >
+            Resumo Financeiro
+          </button>
+        </div>
+      )}
+
+
+
             {modalAberto && (
         <ModalPessoa
           onClose={() => setModalAberto(false)}
